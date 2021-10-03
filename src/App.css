@@ -30,7 +30,27 @@ ul {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
-  margin: 60px 0px 0px 10px; /*top right bottom left */
+  margin: 60px 0px 0px 0px; /*top right bottom left */
+  padding-bottom: 10px;
+  text-decoration:none;
+  font-size: 15px;
+  font-weight:bold;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn-go{
+  background-color:rgb(173, 18, 18);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin: 0px 0px 0px 10px; /*top right bottom left */
   padding-bottom: 10px;
   text-decoration:none;
   font-size: 15px;
@@ -57,6 +77,7 @@ ul {
   font-size: x-large;
 }
 .card{
+  padding-top: 50px;
   border:none;
   border-radius: 0;
 }
@@ -76,4 +97,41 @@ a{
   padding-top: 20px;
   padding-left:20px;
   
+}
+
+.home-page-heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:3rem;
+  color:rgb(35, 35, 114);
+}
+
+.home-page-text{
+  padding-top:40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+.home-page-section-text{
+  padding-top:40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.home-page-heading-span{
+  color: rgb(148, 17, 17);
+}
+.section-heading{
+  text-align: center;
+}
+.home-page-section-span{
+  color: rgb(148, 17, 17);
+  font-weight: bold;
+}
+
+.radius-section{
+  background-image: url("C:/Users/hp/Documents/CIRCLE-Info Tech/website-outcast-solutions/src/assets/world-map.png");
+}
+
+.why-choose-us-section{
+  background-color: rgb(157, 181, 224);
 }
