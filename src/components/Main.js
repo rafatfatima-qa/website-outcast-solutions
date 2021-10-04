@@ -3,11 +3,13 @@ import ContactUs from './ContactUs'
 import Policies from './Policies'
 import Profile from './Profile'
 import Home from './Home'
+import ProductList from './ProductList'
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import SignUp from './SignUp';
 
 
 const Main = () => {
@@ -24,6 +26,14 @@ const Main = () => {
 
       <Route exact path="/website-outcast-solutions">
         <Home />
+      </Route>
+
+      <Route path="/signup">
+        <SignUp />
+      </Route>
+
+      <Route path="/productlist">
+        <ProductList />
       </Route>
           
       <Route exact path="/aboutus">

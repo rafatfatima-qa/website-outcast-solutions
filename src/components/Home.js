@@ -1,6 +1,7 @@
 import React from 'react';
-import Figure from 'react-bootstrap/Figure';
+import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -11,6 +12,8 @@ import fryer from '../assets/Fryer.png';
 import Container from 'react-bootstrap/Container';
 import cylinder from '../assets/small-cylinder.png';
 import { useHistory } from "react-router-dom";
+import Categories from './Categories';
+import FloatingLabel from 'react-bootstrap/FloatingLabel'
 
 const Home = () => {
 
@@ -34,7 +37,7 @@ const Home = () => {
           <br /> 
           for commercial and consumer use
           </p>
-          <Button className="btn" onClick={() => history.push('/placeorder')}>Order Now</Button>
+          <Button className="btn" onClick={() => history.push('/addcart')}>Order Now</Button>
         </Card.Text>
       </Card.Body> 
     </Card>
@@ -43,12 +46,12 @@ const Home = () => {
     </Card>
   </CardGroup> 
 
-  {/* Second HomePage Section*/}
+  {/* Second HomePage Section: */}
         <div className = "section-heading why-choose-us-section">
           <h1> Why Choose <span className = "home-page-heading-span">Us</span>?</h1>
         </div>
 
-   {/* Third HomePage Section*/}      
+   {/* Third HomePage Section: Contact Us*/}      
   <CardGroup>
     <Card>
     <Card.Body>
@@ -57,7 +60,7 @@ const Home = () => {
         Learn about the types of home <span className = "home-page-section-span">propane</span> tanks you can install on
         </p>
       </Card.Text>
-      <Button className="btn" onClick={() => history.push('/placeorder')}>Contact Us <i class="fas fa-long-arrow-alt-right"></i></Button>
+      <Button className="btn" onClick={() => history.push('/contactus')}>Contact Us <i class="fas fa-long-arrow-alt-right"></i></Button>
     </Card.Body> 
     </Card>
 
@@ -68,11 +71,12 @@ const Home = () => {
     </Card>
   </CardGroup>          
   
-  {/* Fourth HomePage Section*/}
+  {/* Fourth HomePage Section: Featured Products*/}
   <div className = "section-heading">
           <h1> Featured <span className = "home-page-heading-span">Products</span></h1>
         </div>
-  <CardGroup>
+        <Categories /> {/*This section will show categories on home page */}
+  {/* <CardGroup>
     <Card>
       <Card.Body>
         <Card.Img variant="top" src={hose} roundedCircle />
@@ -100,9 +104,9 @@ const Home = () => {
     </Card.Body> 
     </Card>
     
-  </CardGroup>
+  </CardGroup> */}
         
-  {/* Fifth HomePage Section*/}
+  {/* Fifth HomePage Section*: ZipCode Section*/}
   <CardGroup>
     <Card className = "radius-section">
     <Card.Body>
@@ -112,7 +116,19 @@ const Home = () => {
       Enter your <span className = "home-page-section-span">Zip Code</span> to Find...</p>
       </Card.Text>  
       <input className = "col-xs-3" type="text" id = "zipcode" placeholder = "Zip Code" />
-      <Button className="btn-go" onClick={() => history.push('/placeorder')}>Go <i class="fas fa-long-arrow-alt-right"></i></Button>
+
+      <FloatingLabel
+                controlId="floatingInput"
+                label="Zip Code"
+                className="mb-3"
+                size = "mb"
+                >
+                <Form.Control type="number" placeholder="xxxxx" />
+                </FloatingLabel>
+
+     
+
+      <Button className="btn-go" onClick={() => history.push('/productlist')}>Go <i class="fas fa-long-arrow-alt-right"></i></Button>
     </Card.Body> 
     </Card> 
 
