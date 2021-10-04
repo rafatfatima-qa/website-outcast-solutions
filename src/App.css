@@ -68,14 +68,30 @@ ul {
 
 .social-media-footer{
   text-align: center;
-  font-size: x-large;
+  font-size:30px;
   padding-left: 30px;
   padding-top: 20px;
+  cursor: pointer;
 }
+
+.social-media-footer:hover{
+  color: rgb(122, 22, 22);
+  cursor: pointer;
+}
+
 .payment-methods-footer{
-  text-align: right;
-  font-size: x-large;
+  font-size: 30px;
+  cursor: pointer;
 }
+
+.payment-methods-footer:hover{
+  color: rgb(122, 22, 22);
+  cursor: pointer;
+}
+.payment-methods-align-right{
+  text-align: right;
+}
+
 .card{
   padding-top: 50px;
   border:none;
@@ -92,6 +108,7 @@ a{
   background-color: rgb(98, 63, 145);
   color:cornsilk;
 }
+
 
 .footer-column-heading{
   padding-top: 20px;

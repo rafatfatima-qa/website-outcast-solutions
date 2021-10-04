@@ -114,7 +114,13 @@ const Home = () => {
       <input className = "col-xs-3" type="text" id = "zipcode" placeholder = "Zip Code" />
       <Button className="btn-go" onClick={() => history.push('/placeorder')}>Go <i class="fas fa-long-arrow-alt-right"></i></Button>
     </Card.Body> 
-    </Card>  
+    </Card> 
+
+    <Card className = "radius-section">
+    <Card.Body>
+    <Card.Img variant="top" src={cylinder} roundedCircle />
+    </Card.Body> 
+    </Card> 
     </CardGroup>  
 
   </Container>
