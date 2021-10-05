@@ -1,38 +1,290 @@
+body{
+  background-size: cover; 
+  background-position: top center; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .App {
   text-align: center;
+  background-size: cover; 
+  background-position: top center; 
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  padding-left: 0rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+  background-color:rgb(173, 18, 18);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin: 10px 0px 0px 0px; /*top right bottom left */
+  padding-bottom: 10px;
+  text-decoration:none;
+  font-size: 15px;
+  font-weight:bold;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-go{
+  background-color:rgb(173, 18, 18);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin: 0px 0px 0px 10px; /*top right bottom left */
+  padding-bottom: 10px;
+  text-decoration:none;
+  font-size: 15px;
+  font-weight:bold;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:hover{
+  background-color:rgb(28, 13, 83);
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.social-media-footer{
+  text-align: center;
+  font-size:30px;
+  padding-left: 30px;
+  padding-top: 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-media-footer:hover{
+  color: rgb(122, 22, 22);
+  cursor: pointer;
 }
+
+.payment-methods-footer{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.payment-methods-footer:hover{
+  color: rgb(122, 22, 22);
+  cursor: pointer;
+}
+.payment-methods-align-right{
+  text-align: right;
+}
+
+.card{
+  padding-top: 50px;
+  border:none;
+  border-radius: 0;
+}
+p{
+  font-size: smaller;
+}
+
+a{
+  color:cornsilk;
+}
+.footer{
+  background-color: rgb(37, 13, 68);
+  color:cornsilk;
+}
+
+
+.footer-column-heading{
+  padding-top: 20px;
+  padding-left:20px;
+  
+}
+
+.home-page-heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:3rem;
+  color:rgb(35, 35, 114);
+}
+
+.home-page-text{
+  padding-top:40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+}
+.home-page-section-text{
+  padding-top:40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.home-page-heading-span{
+  color: rgb(148, 17, 17);
+}
+.section-heading{
+  text-align: center;
+}
+.home-page-section-span{
+  color: rgb(148, 17, 17);
+  font-weight: bold;
+}
+
+.radius-section{
+  background-image: url("C:/Users/hp/Documents/CIRCLE-Info Tech/website-outcast-solutions/src/assets/world-map.png");
+}
+
+.why-choose-us-section{
+  background-color: rgb(157, 181, 224);
+}
+
+/*********************************************************************************************/
+
+.product-card {
+  float: left;
+  color: #070606;
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-top: 50px;
+  margin-right: 5px;
+  margin-left: 0px;
+  height: 225px;
+  width: 170px;
+  border: solid black;
+  border-radius: 15px;
+}
+
+.show {
+  display: block;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+} 
+ 
+.container-main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color:white;
+  padding: 10px 40px;
+  margin-top: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 20px;
+  width: 53%;
+  border: solid white;
+  border-radius: 15px;  
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border:rgb(208, 238, 243) solid 1.5px;
+  font-family: 'Itim', cursive; /* for cart page */
+  font-size: 30px; /* for cart page */
+}
+
+.productName{
+  font-family: 'Itim', cursive;
+  font-size: large;
+}
+
+.price{
+  font-family: 'Itim', cursive;
+  font-size: medium;
+}
+
+.products{
+  display: flex;
+  
+}
+
+.displayProduct{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  padding-top: 10px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-top: 50px;
+  margin-right: 5px;
+  margin-left: 0px;
+  height: 225px;
+  width: 200px;
+  border: solid black;
+  border-radius: 15px;
+   
+}
+.filter-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.btnLike{
+  float: right;
+  background-color: rgb(62, 89, 211);
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 1px 1px;
+  border-radius: 50%;
+}
+
+.imageDiv{
+  height: 120px;
+  margin-top:50px;
+}
+
+.imageClass{
+  border-radius: 10px;
+}
+
+.btnAdd {
+  background-color: rgb(62, 89, 211);
+  border:none;
+  font-family: 'Itim', cursive;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  margin-top: 1px;
+  text-decoration:none;
+  font-size: 15px;
+  border-radius: 30px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image: linear-gradient(to bottom, #a4a4df 0%, rgb(62, 89, 211) 51%, rgb(62, 89, 211) 100%)
+}
+.btnAdd:hover {
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
