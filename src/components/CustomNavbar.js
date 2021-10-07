@@ -37,7 +37,7 @@ const CustomNavbar = () => {
                     <NavDropdown.Item href="/MorePolicies">More Policies</NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/AboutUs">About Us</Nav.Link>
-                <Nav.Link href="/SignUp">Sign Up</Nav.Link>
+                <Nav.Link href="/SignIn">Sign In</Nav.Link>
                 <Nav.Link href="/Profile"><i class="fas fa-user-alt"></i></Nav.Link>
                 <Nav.Link href="/Search"><i class="fas fa-search"></i></Nav.Link>
                 <Nav.Link href="/AddCart"><i class="fas fa-cart-plus"></i>(0)</Nav.Link>

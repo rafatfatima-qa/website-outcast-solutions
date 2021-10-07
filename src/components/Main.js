@@ -10,6 +10,8 @@ import {
   Route
 } from "react-router-dom";
 import SignUp from './SignUp';
+import SignIn from './SignIn';
+import ForgotPassword from './ForgotPassword';
 
 
 const Main = () => {
@@ -26,6 +28,14 @@ const Main = () => {
 
       <Route exact path="/website-outcast-solutions">
         <Home />
+      </Route>
+
+      <Route path="/signin">
+        <SignIn />
+      </Route>
+
+      <Route path="/forgotpassword">
+        <ForgotPassword />
       </Route>
 
       <Route path="/signup">
