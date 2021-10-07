@@ -157,3 +157,12 @@ a{
   color:crimson;
   float: right;
 }
+
+.aboutus-page-text{
+  padding-top:40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+#map {
+  height: 100%;
+}

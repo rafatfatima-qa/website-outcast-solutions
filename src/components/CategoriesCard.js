@@ -17,7 +17,7 @@ export default function CategoriesCard({
   return (
       <Container>
         <Row xs={1} md={2} className="g-4">
-          {Array.from({ length: 2 }).map((_, idx) => (
+          {Array.from({ length: 1 }).map((_, idx) => (
           <Col>
           <Card style={{ width: '13rem' }}>
           <Card.Img variant="top" src= {image} text = "product-img"/>

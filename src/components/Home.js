@@ -42,7 +42,7 @@ const Home = () => {
           </Card>
         </CardGroup>
 
-        {/* Second HomePage Section: */}
+        {/* Second HomePage Section: why-choose-us*/}
         <div className="section-heading why-choose-us-section">
           <h1>
             {" "}

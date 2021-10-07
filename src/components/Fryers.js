@@ -1,39 +1,40 @@
 import React from "react";
 import CategoriesCard from "./CategoriesCard";
+import Data from './Data'
 
 const Categories = () => {
-  let products = [
-    {
-      productId: "1",
-      productName: "Fryer",
-      image: "../assets/Fryer.png",
-      isLiked: false,
-      tag: "fryer",
-      price: "$100",
-    },
-    {
-      productId: "2",
-      productName: "Propane Cylinder",
-      image: "../assets/cylinder.jpg",
-      isLiked: true,
-      tag: "cylinder",
-      price: "$200",
-    },
+  // let products = [
+  //   {
+  //     productId: "1",
+  //     productName: "Fryer",
+  //     image: "../assets/Fryer.png",
+  //     isLiked: false,
+  //     tag: "fryer",
+  //     price: "$100",
+  //   },
+  //   {
+  //     productId: "2",
+  //     productName: "Propane Cylinder",
+  //     image: "../assets/cylinder.jpg",
+  //     isLiked: true,
+  //     tag: "cylinder",
+  //     price: "$200",
+  //   },
 
-    {
-      productId: "3",
-      productName: "Propane Cylinder",
-      image: "../assets/cylinder.jpg",
-      isLiked: true,
-      tag: "cylinder",
-      price: "$200",
-    },
-  ];
+  //   {
+  //     productId: "3",
+  //     productName: "Propane Cylinder",
+  //     image: "../assets/cylinder.jpg",
+  //     isLiked: true,
+  //     tag: "cylinder",
+  //     price: "$200",
+  //   },
+  // ];
 
   return (
     <>
       <div className="wrapper">
-        {products
+        {Data
           .filter((product) => product.tag === "fryer")
           .map((product) => (
             <CategoriesCard
