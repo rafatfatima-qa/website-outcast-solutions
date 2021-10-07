@@ -20,9 +20,9 @@ export default function CategoriesCard({
           {Array.from({ length: 2 }).map((_, idx) => (
           <Col>
           <Card style={{ width: '13rem' }}>
-          <Card.Img variant="top" src = {image} text = "product-img"/>
+          <Card.Img variant="top" src= {image} text = "product-img"/>
           <Card.Body>
-          <Card.Title>Product Name: {name}</Card.Title>
+          <Card.Title> {name} </Card.Title>
           <Card.Title>Tag: {tag}</Card.Title>
           <Card.Title>Price: {price}</Card.Title>
           {/* <Button variant="primary" size="sm"  onClick = {() => addCart()}>Add</Button> */}
