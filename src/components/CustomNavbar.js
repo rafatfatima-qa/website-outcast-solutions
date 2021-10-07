@@ -21,8 +21,8 @@ const CustomNavbar = () => {
                     />{' '}
                 
                 </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto"> {/* This is to put space between logo and header links*/}
                 </Nav>
                 <Nav>

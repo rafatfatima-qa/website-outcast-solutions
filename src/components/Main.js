@@ -3,11 +3,19 @@ import ContactUs from './ContactUs'
 import Policies from './Policies'
 import Profile from './Profile'
 import Home from './Home'
+import ProductList from './ProductList'
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import SignUp from './SignUp';
+import SignIn from './SignIn';
+import ForgotPassword from './ForgotPassword';
+import Fryers from './Fryers';
+import Cylinders from './Cylinders';
+import Categories from './Categories';
+import AddCart from './AddCart';
 
 
 const Main = () => {
@@ -24,6 +32,38 @@ const Main = () => {
 
       <Route exact path="/website-outcast-solutions">
         <Home />
+      </Route>
+
+      <Route path="/signin">
+        <SignIn />
+      </Route>
+
+      <Route path="/forgotpassword">
+        <ForgotPassword />
+      </Route>
+
+      <Route path="/signup">
+        <SignUp />
+      </Route>
+
+      <Route path="/productlist">
+        <ProductList />
+      </Route>
+
+      <Route path="/fryers">
+        <Fryers />
+      </Route>
+
+      <Route path="/cylinders">
+        <Cylinders />
+      </Route>
+
+      <Route path="/Categories">
+        <Categories />
+      </Route>
+
+      <Route path="/addcart">
+        <AddCart />
       </Route>
           
       <Route exact path="/aboutus">
