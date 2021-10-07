@@ -9,6 +9,7 @@ import hose from '../assets/4 foot house.jpg';
 import burner from '../assets/burner.jpg';
 import fryer from '../assets/Fryer.png';
 import Container from 'react-bootstrap/Container';
+
 import googleBtn from '../assets/google-btn.png';
 import worldMap from '../assets/world-map.png';
 import appleBtn from '../assets/apple-btn.png';
@@ -53,7 +54,7 @@ const Home = () => {
       <Container className="second-section">
           <h1 class="text-center second-section-heading"> Why Choose <span className = "home-page-heading-span">Us</span>?</h1>
           <CardGroup >
-    <Card className="card1 mb-5">
+    <Card className="cards mb-5">
     <Card.Body class="m-5">
     <i class="second-sec-icons fas fa-hand-holding-usd"></i>
     <Card.Title>
@@ -71,7 +72,7 @@ price
     </Card.Body> 
     </Card>
 
-    <Card className="card2 mb-5">
+    <Card className="cards mb-5">
     <Card.Body class="m-5">
     <i class="second-sec-icons fas fa-people-carry"></i>
     <Card.Title>
@@ -89,7 +90,7 @@ price
     </Card.Body> 
     </Card>
 
-    <Card className="card3 mb-5">
+    <Card className="cards mb-5">
     <Card.Body class="m-5">
     <i class="second-sec-icons fas fa-globe-americas"></i>
     <Card.Title>
@@ -115,7 +116,7 @@ price
           <h1 class="third-section-heading"> Featured <span className = "home-page-heading-span">Products</span></h1>
         </div>
   <CardGroup>
-    <Card className="feature-card card1 mb-5">
+    <Card className="feature-card cards mb-5">
       <Card.Body>
         <Card.Img className="w-50 feature-image " variant="top" src={hose} roundedCircle />
         <Card.Title className="text-muted">
@@ -136,7 +137,7 @@ price
       </Card.Body> 
     </Card>
 
-    <Card className="feature-card card2 mb-5">
+    <Card className="feature-card cards mb-5">
     <Card.Body>
     <Card.Img className="w-50 feature-image" variant="top" src={burner} roundedCircle />
       <Card.Title className="text-muted ">
@@ -157,7 +158,7 @@ price
     </Card.Body> 
     </Card>
 
-    <Card className="feature-card card3 mb-5">
+    <Card className="feature-card cards mb-5">
     <Card.Body>
     <Card.Img className="w-50 feature-image" variant="top" src={fryer} roundedCircle />
       <Card.Title className="text-muted">
@@ -177,12 +178,13 @@ price
       </div>
     </Card.Body> 
     </Card>
-    
+   
   </CardGroup>
+  </Container>
          {/* fourth HomePage Section*/}  
-        
-  <CardGroup className=" fourth " >
-    <Card>
+   
+  <CardGroup  >
+    <Card className=" fourth ">
     <Card.Body>
       <Card.Text>
        <p className = "home-page-section-text">
@@ -192,28 +194,30 @@ price
       <Button className="btn" onClick={() => history.push('/placeorder')}>Contact Us <i class="fas fa-long-arrow-alt-right"></i></Button>
     </Card.Body> 
     </Card>
+    
 
-    <Card>
+    <Card className=" fourth ">
     <Card.Body>
     <Card.Img className=" fourth-sec-img" variant="top" src={cylinder} roundedCircle />
     </Card.Body> 
     </Card>
   </CardGroup>  
-      
+ 
   {/* Fifth HomePage Section*/}
-  {/* <Card.Img className="fifth-img" variant="top" src={worldMap} roundedCircle /> */}
-  <CardGroup className="fifth-img">
+  
+ 
     
     <Card className = "radius-section">
-    <Card.Body>
+    <Card.Body className="zip">
       <Card.Text>
       <p className = "home-page-section-text">Are you inside our radius?
       <br />
       Enter your <span className = "home-page-section-span">Zip Code</span> to Find...</p>
       </Card.Text>  
-      <input className = "col-xs-3" type="text" id = "zipcode" placeholder = "Zip Code" />
+      <input className = "col-xs-3 input-zipcode" type="text" id = "zipcode" placeholder = "Zip Code" />
       <Button className="btn-go" onClick={() => history.push('/placeorder')}>Go <i class="fas fa-long-arrow-alt-right"></i></Button>
     </Card.Body> 
+    <Card.Img className="fifth-img" variant="top" src={worldMap} roundedCircle />
     </Card> 
 {/* 
     <Card className = "radius-section">
@@ -221,9 +225,9 @@ price
 
     </Card.Body> 
     </Card>  */}
-    </CardGroup>  
+   
 
-  </Container>
+
     </>
   );
 }
