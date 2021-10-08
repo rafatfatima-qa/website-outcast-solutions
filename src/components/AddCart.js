@@ -26,6 +26,8 @@ const AddCart = () => {
     );
   }
   <Button onClick={() => setShow(true)}>Show Alert</Button>;
+
+  // render(<AlertDismissible />);
 };
 
 export default AddCart;
