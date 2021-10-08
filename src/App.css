@@ -261,3 +261,41 @@ height: 450px;
 .why-choose-us-section{
   background-color: #9db5e0;
 }
+/*SignIn page*/
+
+.icon-img{
+ font-size: 53px;
+   color:#3C3B6E;
+   margin-bottom: 12px;
+}
+
+#signin-btn{
+  width :100% !important ;
+}
+.ui-img3{
+float: right;
+margin-bottom: 2rem;
+width: 450px ;
+}
+/* 
+.form{
+
+  background-color: #b5b2ff18 !important;
+
+} */
+
+
+.login,
+.image {
+  min-height: 90vh;
+}
+.bg-image {
+  background-image: url('./assets/login-img.png');
+  background-size: cover;
+  background-position: center center;
+}
+.bg-image-signup{
+  background-size: cover;
+  background-position: center center;
+  background-image: url('./assets/signup-img.png');
+}
