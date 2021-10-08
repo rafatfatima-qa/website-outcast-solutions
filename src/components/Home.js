@@ -104,7 +104,8 @@ let history = useHistory();
     <Card>
     <Card.Img class="header-img" variant="top" src={cylinder} roundedCircle/>
     </Card>
-  </CardGroup> 
+  </Container> 
+
   
         {/* Second HomePage Section: */}
         
