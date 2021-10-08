@@ -4,9 +4,17 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
+import MapSection from '../components/map/Map' // import the map here
+
+
+const location = {
+    address: '1005 N.W. 119th Street, North Miami, FL',
+    lat: 25.884572674780078,
+    lng: -80.21524240740798,
+  } // our location object from earlier
+
 
 const ContactUs = () => {
   return (
@@ -15,7 +23,7 @@ const ContactUs = () => {
         <Card>
           
           <Card.Body>
-            <Map />
+            <MapSection location={location} zoomLevel={17} /> {/* include it here */}
             <Card.Text>
               <p className="aboutus-page-text">
                 <h1>Our Address</h1>
@@ -68,3 +76,6 @@ const ContactUs = () => {
   );
 };
 export default ContactUs;
+
+
+

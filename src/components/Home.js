@@ -8,6 +8,7 @@ import Container from "react-bootstrap/Container";
 import cylinder from "../assets/small-cylinder.png";
 import { useHistory } from "react-router-dom";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
+import Categories from "./Categories";
 
 const Home = () => {
   let history = useHistory();
@@ -84,9 +85,9 @@ const Home = () => {
             Featured <span className="home-page-heading-span">Products</span>
           </h1>
         </div>
-
+        <Categories />
         {/* These are links to filter products*/}
-        <Nav className="justify-content-center" activeKey="/Categories">
+        {/* <Nav className="justify-content-center" activeKey="/Categories">
           <Nav.Item>
             <Nav.Link href="/Categories">Show All</Nav.Link>
           </Nav.Item>
@@ -96,7 +97,7 @@ const Home = () => {
           <Nav.Item>
             <Nav.Link href="/Cylinders">Cylinders</Nav.Link>
           </Nav.Item>
-        </Nav>
+        </Nav> */}
 
         {/* Fifth HomePage Section*: ZipCode Section*/}
         <CardGroup>

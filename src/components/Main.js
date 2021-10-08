@@ -18,6 +18,7 @@ import Categories from './Categories';
 import AddCart from './AddCart';
 
 
+
 const Main = () => {
     return (
 <Router> 
@@ -73,6 +74,8 @@ const Main = () => {
       <Route path="/contactus">
         <ContactUs />
       </Route>
+
+    
 
       <Route path="/policies">
         <Policies />

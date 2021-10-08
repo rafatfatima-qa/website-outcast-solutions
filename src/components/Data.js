@@ -2,7 +2,7 @@ const Data = [
     {
       productId: "1",
       productName: "Fryer",
-      image: "../assets/Fryer.png",
+      image: 'assets/Fryer.png',
       isLiked: false,
       tag: "fryer",
       price: "$100",
@@ -10,7 +10,7 @@ const Data = [
     {
       productId: "2",
       productName: "Propane Cylinder",
-      image: "../assets/cylinder.jpg",
+      image: "assets/cylinder.jpg",
       isLiked: true,
       tag: "cylinder",
       price: "$200",
@@ -19,7 +19,7 @@ const Data = [
     {
       productId: "3",
       productName: "Propane Cylinder",
-      image: "../assets/cylinder.jpg",
+      image: 'assets/cylinder.jpg',
       isLiked: true,
       tag: "cylinder",
       price: "$200",

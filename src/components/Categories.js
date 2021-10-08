@@ -1,52 +1,44 @@
-import React from "react";
+import React, {useState} from "react";
 import CategoriesCard from "./CategoriesCard";
+import Button from 'react-bootstrap/Button';
+import data from "./Data";
+
+
 
 const Categories = () => {
-  let products = [
-    {
-      productId: "1",
-      productName: "Fryer",
-      image: "../assets/Fryer.png",
-      isLiked: false,
-      tag: "fryer",
-      price: "$100",
-    },
-    {
-      productId: "2",
-      productName: "Propane Cylinder",
-      image: "../assets/cylinder.jpg",
-      isLiked: true,
-      tag: "cylinder",
-      price: "$200",
-    },
-
-    {
-      productId: "3",
-      productName: "Propane Cylinder",
-      image: "../assets/cylinder.jpg",
-      isLiked: true,
-      tag: "cylinder",
-      price: "$200",
-    },
-  ];
-
-  return (
+    const[dataItems, setDataItems]= useState(data);
+   
+    const filterItem = (categoryItem) =>{
+            const updatedItem = data.filter((currentElement) =>{
+            console.log(currentElement)
+            return currentElement.tag === categoryItem;
+    });
+         
+          console.log(updatedItem);
+          setDataItems(updatedItem);
+        }
+       
+    return(
     <>
-      <div className="wrapper">
-        {products
-          .filter(
-            (product) => product.tag === "cylinder" || product.tag === "fryer"
-          )
-          .map((product) => (
-            <CategoriesCard
-              key={product.productId}
-              name={product.productName}
-              image={product.image}
-              price={product.price}
-            />
-          ))}
-      </div>
+    <Button onClick={() => {filterItem('cylinder')}}> Cylinder</Button>{' '}
+    <Button onClick={() => {filterItem('fryer')}}> Fryer</Button>{' '}
+    <Button onClick={() => {setDataItems(data)}}> All</Button>
+​
+        <div className="wrapper">
+          <div className = "row justify-content-center">
+            {dataItems.map((item, index)=>{
+                return(<CategoriesCard 
+                  key = {item.productId} 
+                  image = {item.image} 
+                  tag = {item.tag} 
+                  name = {item.productName} 
+                  price = {item.price}
+                  />)
+            })}
+        </div>
+    </div>
     </>
-  );
-};
-export default Categories;
+    );
+  }
+
+  export default Categories;
