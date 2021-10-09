@@ -25,7 +25,7 @@ const AddCart = () => {
       </Alert>
     );
   }
-  <Button onClick={() => setShow(true)}>Show Alert</Button>;
+  <Button onClick={() => setShow(true)}>Shop More</Button>;
 
   // render(<AlertDismissible />);
 };
