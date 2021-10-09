@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/website-outcast-solutions/static/css/main.d1b9c6f1.chunk.css",
+    "main.js": "/website-outcast-solutions/static/js/main.ca45eb97.chunk.js",
+    "main.js.map": "/website-outcast-solutions/static/js/main.ca45eb97.chunk.js.map",
+    "runtime-main.js": "/website-outcast-solutions/static/js/runtime-main.09eb531d.js",
+    "runtime-main.js.map": "/website-outcast-solutions/static/js/runtime-main.09eb531d.js.map",
+    "static/css/2.f2512455.chunk.css": "/website-outcast-solutions/static/css/2.f2512455.chunk.css",
+    "static/js/2.d95b9d44.chunk.js": "/website-outcast-solutions/static/js/2.d95b9d44.chunk.js",
+    "static/js/2.d95b9d44.chunk.js.map": "/website-outcast-solutions/static/js/2.d95b9d44.chunk.js.map",
+    "static/js/3.05a20371.chunk.js": "/website-outcast-solutions/static/js/3.05a20371.chunk.js",
+    "static/js/3.05a20371.chunk.js.map": "/website-outcast-solutions/static/js/3.05a20371.chunk.js.map",
+    "index.html": "/website-outcast-solutions/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/website-outcast-solutions/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.d1b9c6f1.chunk.css.map": "/website-outcast-solutions/static/css/main.d1b9c6f1.chunk.css.map",
+    "static/js/2.d95b9d44.chunk.js.LICENSE.txt": "/website-outcast-solutions/static/js/2.d95b9d44.chunk.js.LICENSE.txt",
+    "static/media/Logo1.acabe63a.png": "/website-outcast-solutions/static/media/Logo1.acabe63a.png",
+    "static/media/google-btn.6a0669cc.png": "/website-outcast-solutions/static/media/google-btn.6a0669cc.png",
+    "static/media/App.css": "/website-outcast-solutions/static/media/signup-img.2d46d8f8.png",
+    "static/media/small-cylinder.65ca1fbb.png": "/website-outcast-solutions/static/media/small-cylinder.65ca1fbb.png",
+    "static/media/ui-img2.ddcbb45a.png": "/website-outcast-solutions/static/media/ui-img2.ddcbb45a.png",
+    "static/media/ui-img3.acff9e14.png": "/website-outcast-solutions/static/media/ui-img3.acff9e14.png",
+    "static/media/user-icon.900cdc55.png": "/website-outcast-solutions/static/media/user-icon.900cdc55.png",
+    "static/media/world-map.7c8f2f36.png": "/website-outcast-solutions/static/media/world-map.7c8f2f36.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09eb531d.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.d95b9d44.chunk.js",
+    "static/css/main.d1b9c6f1.chunk.css",
+    "static/js/main.ca45eb97.chunk.js"
+  ]
+}
