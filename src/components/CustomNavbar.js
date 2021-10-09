@@ -27,7 +27,7 @@ const CustomNavbar = () => {
             </Nav>
             <Nav>
               <Nav.Link href="/Home">Home</Nav.Link>
-              <Nav.Link href="/Policies">Policies</Nav.Link>
+              <Nav.Link href="/OrderList">Orders</Nav.Link>
               {/* <Nav.Link href="#pricing">Shipping & Returns</Nav.Link> */}
               <NavDropdown
                 title="Shipping & Returns"
