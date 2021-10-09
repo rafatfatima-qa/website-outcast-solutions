@@ -1,43 +1,38 @@
-import React from 'react';
-import CategoriesCard from './CategoriesCard'
-
-
+import React, {useState} from "react";
+import CategoriesCard from "./CategoriesCard";
+import Button from 'react-bootstrap/Button';
+import data from './Data'
 const Categories = () => {
-
-    let products = [{
-        productName: 'Nike Man\'s Flex',
-        image: `"images/nike-shoes.jpg" alt="nike-shoes-red" width="173" height="120" class = "imageClass"`,
-        isLiked: false,
-        tag: "footwear",
-        price: "$100"
-      },
-      {
-        productName: "Nike shoes black",
-        image:`<img src="images/nike-black-shoes.jpg" alt="nike-shoes-black" width="173" height="120" class = "imageClass">`,
-        isLiked: true,
-        tag: "footwear",
-        price: "$1100"
-      }]
-
-
-    return (
-        <>
-           <div className="wrapper">
-
-            {products.map((item) => (
-            <CategoriesCard
-            key = {item.productName}
-            
-            name = {item.productName}
-            image = {item.image}
-            isLiked = {item.isLiked} 
-            tag = {item.tag}
-            price = {item.price}
-            />
-            ))}
-
-</div>
-        </>
-  );
-}
-export default Categories;
+    const[dataItems, setDataItems]= useState(data);
+    const filterItem = (categoryItem) =>{
+            const updatedItem = data.filter((currentElement) =>{
+            console.log(currentElement)
+            return currentElement.tag === categoryItem;
+    });
+          console.log(updatedItem);
+          setDataItems(updatedItem);
+        }
+    return(
+    <>
+    <div className=" d-flex justify-content-center">
+    <Button className="filter-btn" onClick={() => {filterItem('cylinder')}}> Cylinder</Button>{' '}
+    <Button className="filter-btn" onClick={() => {filterItem('fryer')}}> Fryer</Button>{' '}
+    <Button className="filter-btn" onClick={() => {setDataItems(data)}}> All</Button>
+    </div>
+        <div className="wrapper">
+          <div className = "row justify-content-center">
+            {dataItems.map((item, index)=>{
+                return(<CategoriesCard
+                  key = {item.productId}
+                  image = {item.image}
+                  tag = {item.tag}
+                  name = {item.productName}
+                  price = {item.price}
+                  />)
+            })}
+        </div>
+    </div>
+    </>
+    );
+  }
+  export default Categories;

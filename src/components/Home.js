@@ -1,146 +1,185 @@
-import React from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl';
-import hose from '../assets/4 foot house.jpg';
-import burner from '../assets/burner.jpg';
-import fryer from '../assets/Fryer.png';
-import Container from 'react-bootstrap/Container';
-import cylinder from '../assets/small-cylinder.png';
+import React from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import Nav from "react-bootstrap/Nav";
+import Card from "react-bootstrap/Card";
+import CardGroup from "react-bootstrap/CardGroup";
+import Container from "react-bootstrap/Container";
+import worldMap from "../assets/world-map.png";
+import googleBtn from "../assets/google-btn.png";
+import appleBtn from "../assets/apple-btn.png";
+import cylinder from "../assets/small-cylinder.png";
 import { useHistory } from "react-router-dom";
 import Categories from './Categories';
-import FloatingLabel from 'react-bootstrap/FloatingLabel'
-
+import { FloatingLabel } from "react-bootstrap";
 const Home = () => {
-
   let history = useHistory();
-
   return (
-<>
-  <Container>
-  {/* First HomePage Section*/}
-  <CardGroup>
-    <Card>
-      <Card.Body>
-        <Card.Title>
-          <p className = "home-page-heading"> Not So Fast,
-          <br /> 
-          Natural <span className = "home-page-heading-span">Gas</span> </p>
-        </Card.Title>
-        <Card.Text>
-          <p className = "home-page-text">
-          Our products comprise industrial gases 
-          <br /> 
-          for commercial and consumer use
-          </p>
-          <Button className="btn" onClick={() => history.push('/addcart')}>Order Now</Button>
-        </Card.Text>
-      </Card.Body> 
-    </Card>
-    <Card>
-    <Card.Img variant="top" src={cylinder} roundedCircle/>
-    </Card>
-  </CardGroup> 
-
-  {/* Second HomePage Section: */}
-        <div className = "section-heading why-choose-us-section">
-          <h1> Why Choose <span className = "home-page-heading-span">Us</span>?</h1>
-        </div>
-
-   {/* Third HomePage Section: Contact Us*/}      
-  <CardGroup>
-    <Card>
-    <Card.Body>
-      <Card.Text>
-       <p className = "home-page-section-text">
-        Learn about the types of home <span className = "home-page-section-span">propane</span> tanks you can install on
-        </p>
-      </Card.Text>
-      <Button className="btn" onClick={() => history.push('/contactus')}>Contact Us <i class="fas fa-long-arrow-alt-right"></i></Button>
-    </Card.Body> 
-    </Card>
-
-    <Card>
-    <Card.Body>
-    <Card.Img variant="top" src={cylinder} roundedCircle />
-    </Card.Body> 
-    </Card>
-  </CardGroup>          
-  
-  {/* Fourth HomePage Section: Featured Products*/}
-  <div className = "section-heading">
-          <h1> Featured <span className = "home-page-heading-span">Products</span></h1>
-        </div>
-        <Categories /> {/*This section will show categories on home page */}
-  {/* <CardGroup>
-    <Card>
-      <Card.Body>
-        <Card.Img variant="top" src={hose} roundedCircle />
-        <Card.Text>
-          Product Description
-        </Card.Text>
-      </Card.Body> 
-    </Card>
-
-    <Card>
-    <Card.Body>
-    <Card.Img variant="top" src={burner} roundedCircle />
-      <Card.Text>
-      Product Description
-      </Card.Text>
-    </Card.Body> 
-    </Card>
-
-    <Card>
-    <Card.Body>
-    <Card.Img variant="top" src={fryer} roundedCircle />
-      <Card.Text>
-      Product Description
-      </Card.Text>
-    </Card.Body> 
-    </Card>
-    
-  </CardGroup> */}
-        
-  {/* Fifth HomePage Section*: ZipCode Section*/}
-  <CardGroup>
-    <Card className = "radius-section">
-    <Card.Body>
-      <Card.Text>
-      <p className = "home-page-section-text">Are you inside our radius?
-      <br />
-      Enter your <span className = "home-page-section-span">Zip Code</span> to Find...</p>
-      </Card.Text>  
-      <input className = "col-xs-3" type="text" id = "zipcode" placeholder = "Zip Code" />
-
-      <FloatingLabel
-                controlId="floatingInput"
-                label="Zip Code"
-                className="mb-3"
-                size = "mb"
+    <>
+      <Container>
+        {/* First HomePage Section*/}
+        <CardGroup>
+          <Card>
+            <Card.Body>
+              <Card.Title>
+                <p className="home-page-heading">
+                  {" "}
+                  Not So Fast,
+                  <br />
+                  Natural <span className="home-page-heading-span">
+                    Gas
+                  </span>{" "}
+                </p>
+              </Card.Title>
+              <Card.Text>
+                <p className="home-page-text">
+                  Our products comprise industrial gases
+                  <br />
+                  for commercial and consumer use
+                </p>
+                <a
+                  className="download-btn"
+                  onClick={() => history.push("/placeorder")}
                 >
-                <Form.Control type="number" placeholder="xxxxx" />
-                </FloatingLabel>
+                  <img width="130px" src={googleBtn}></img>
+                </a>
+                <a
+                  className="download-btn"
+                  onClick={() => history.push("/placeorder")}
+                >
+                  <img width="156px" src={appleBtn}></img>
+                </a>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Img
+              class="header-img"
+              variant="top"
+              src={cylinder}
+              roundedCircle
+            />
+          </Card>
+        </CardGroup>
+        {/* Second HomePage Section: */}
+        <Container className="second-section">
+          <h1 class="text-center second-section-heading">
+            {" "}
+            Why Choose <span className="home-page-heading-span">Us</span>?
+          </h1>
+          <CardGroup>
+            <Card className="cards mb-5">
+              <Card.Body class="m-5">
+                <i class="second-sec-icons fas fa-hand-holding-usd"></i>
+                <Card.Title>
+                  <p className="text-center mt-4">
+                    {" "}
+                    Best quality with Affordable Price
+                  </p>
+                </Card.Title>
+                <Card.Text class="text-left">
+                  We provide you a best services in US at very affordable price
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card className="cards mb-5">
+              <Card.Body class="m-5">
+                <i class="second-sec-icons fas fa-people-carry"></i>
+                <Card.Title>
+                  <p className="text-center mt-4">
+                    {" "}
+                    Reliable & perfect for commercial
+                  </p>
+                </Card.Title>
+                <Card.Text>
+                  We provide you a best services in US at very affordable price
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            <Card className="cards mb-5">
+              <Card.Body class="m-5">
+                <i class="second-sec-icons fas fa-globe-americas"></i>
+                <Card.Title>
+                  <p className="text-center mt-4"> Location Around The World</p>
+                </Card.Title>
+                <Card.Text>
+                  We provide you a best services in US at very affordable price
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </CardGroup>
+        </Container>
+        {/* Third HomePage Section: Featured Products*/}
+      <div className="section-heading">
+        <h1>
+          {" "}
+          Featured <span className="home-page-heading-span">Products</span>
+        </h1>
+      </div>
+      <Categories />
+      </Container>
+      {/* Fourth HomePage Section: Contact Us*/}
+      <CardGroup>
+        <Card className=" fourth ">
+          <Card.Body>
+            <Card.Text>
+              <p className="home-page-section-text">
+                Learn about the types of home{" "}
+                <span className="home-page-heading-span">propane</span> tanks
+                you can install on
+              </p>
+            </Card.Text>
+            <Button className="btn" onClick={() => history.push("/placeorder")}>
+              Contact Us <i class="fas fa-long-arrow-alt-right"></i>
+            </Button>
+          </Card.Body>
+        </Card>
 
-     
+        <Card className=" fourth ">
+          <Card.Body>
+            <Card.Img
+              className=" fourth-sec-img"
+              variant="top"
+              src={cylinder}
+              roundedCircle
+            />
+          </Card.Body>
+        </Card>
+      </CardGroup>
 
-      <Button className="btn-go" onClick={() => history.push('/productlist')}>Go <i class="fas fa-long-arrow-alt-right"></i></Button>
-    </Card.Body> 
-    </Card> 
-
-    <Card className = "radius-section">
-    <Card.Body>
-    <Card.Img variant="top" src={cylinder} roundedCircle />
-    </Card.Body> 
-    </Card> 
-    </CardGroup>  
-
-  </Container>
+      {/* Fifth HomePage Section*: ZipCode Section*/}
+      <Card className="radius-section">
+        <Card.Body className="zip">
+          <Card.Text>
+            <p className="home-page-section-text">
+              Are you inside our radius?
+              <br />
+              Enter your{" "}
+              <span className="home-page-section-span">Zip Code</span> to
+              Find...
+            </p>
+          </Card.Text>
+          <input
+            className="col-xs-3 input-zipcode"
+            type="text"
+            id="zipcode"
+            placeholder="Zip Code"
+          />
+          <Button
+            className="btn-go"
+            onClick={() => history.push("/placeorder")}
+          >
+            Go <i class="fas fa-long-arrow-alt-right"></i>
+          </Button>
+        </Card.Body>
+        <Card.Img
+          className="fifth-img"
+          variant="top"
+          src={worldMap}
+          roundedCircle
+        />
+      </Card>
     </>
   );
-}
+};
 export default Home;

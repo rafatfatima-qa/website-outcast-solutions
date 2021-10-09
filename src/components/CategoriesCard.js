@@ -1,37 +1,24 @@
-import React from 'react';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import Card from "react-bootstrap/Card";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-
-export default function CategoriesCard({
-  name,
-  image,
-  isLiked,
-  tag,
-  price,
-}) {
+const CategoriesCard = (props) => {
   return (
-      <Container>
-        <Row xs={1} md={2} className="g-4">
-          {Array.from({ length: 2 }).map((_, idx) => (
-          <Col>
-          <Card style={{ width: '13rem' }}>
-          <Card.Img variant="top" src = {image} text = "product-img"/>
-          <Card.Body>
-          <Card.Title>Product Name: {name}</Card.Title>
-          <Card.Title>Tag: {tag}</Card.Title>
-          <Card.Title>Price: {price}</Card.Title>
-          {/* <Button variant="primary" size="sm"  onClick = {() => addCart()}>Add</Button> */}
-          </Card.Body>
+    <>
+      <div className="col-11 col-md-6 col-lg-3 mx-0 mb-4">
+        <div class="card p-0 overflow-hidden h-100 shadow">
+          <Card>
+            <Card.Img variant="top" src={props.image} text="product-img" />
+            <Card.Body>
+              <Card.Title>{props.tag}</Card.Title>
+              <Card.Title>{props.name}</Card.Title>
+              <Card.Title>{props.price}</Card.Title>
+            </Card.Body>
           </Card>
-          </Col>
-    ))}
-         </Row>
-      </Container>
-   
+        </div>
+      </div>
+    </>
   );
 }
+
+export default CategoriesCard;
