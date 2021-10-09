@@ -16,7 +16,7 @@ const LocationPin = ({ text }) => (
 const MapSection = ({ location, zoomLevel }) => {
   return (
     <div className="map">
-      <h2 className="map-h2">Come Visit Us At</h2>
+      {/* <h2 className="map-h2">Come Visit Us At</h2> */}
 
       <div className="google">
         <GoogleMapReact

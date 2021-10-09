@@ -39,7 +39,7 @@ const CustomNavbar = () => {
                 <NavDropdown.Item href="/ShippingPolicy">
                   Shipping Policy
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/PrivacyPolicy">
+                <NavDropdown.Item href="/Policies">
                   Privacy Policy
                 </NavDropdown.Item>
                 <NavDropdown.Divider />

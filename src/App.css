@@ -291,3 +291,19 @@ a {
   margin-right: 12px;
   margin-bottom: 22px;
 }
+
+.forgot-pwd{
+  color:crimson;
+  float: right;
+}
+
+.aboutus-page-text{
+  padding-top:40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.p-shipping-returns {
+    margin: 42px;
+    margin-top: -15px;
+}

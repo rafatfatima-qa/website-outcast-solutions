@@ -28,6 +28,7 @@ const Categories = () => {
                   tag = {item.tag}
                   name = {item.productName}
                   price = {item.price}
+                  description = {item.description}
                   />)
             })}
         </div>

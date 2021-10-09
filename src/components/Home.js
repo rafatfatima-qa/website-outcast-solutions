@@ -10,8 +10,8 @@ import googleBtn from "../assets/google-btn.png";
 import appleBtn from "../assets/apple-btn.png";
 import cylinder from "../assets/small-cylinder.png";
 import { useHistory } from "react-router-dom";
-import Categories from './Categories';
-import { FloatingLabel } from "react-bootstrap";
+import Categories from "./Categories";
+
 const Home = () => {
   let history = useHistory();
   return (
@@ -39,13 +39,13 @@ const Home = () => {
                 </p>
                 <a
                   className="download-btn"
-                  onClick={() => history.push("/placeorder")}
+                  href="https://play.google.com/store/apps" target="_blank"
                 >
                   <img width="130px" src={googleBtn}></img>
                 </a>
                 <a
                   className="download-btn"
-                  onClick={() => history.push("/placeorder")}
+                  href="https://www.apple.com/app-store/" target="_blank"
                 >
                   <img width="156px" src={appleBtn}></img>
                 </a>
@@ -110,13 +110,13 @@ const Home = () => {
           </CardGroup>
         </Container>
         {/* Third HomePage Section: Featured Products*/}
-      <div className="section-heading">
-        <h1>
-          {" "}
-          Featured <span className="home-page-heading-span">Products</span>
-        </h1>
-      </div>
-      <Categories />
+        <div className="section-heading">
+          <h1>
+            {" "}
+            Featured <span className="home-page-heading-span">Products</span>
+          </h1>
+        </div>
+        <Categories />
       </Container>
       {/* Fourth HomePage Section: Contact Us*/}
       <CardGroup>
@@ -129,7 +129,7 @@ const Home = () => {
                 you can install on
               </p>
             </Card.Text>
-            <Button className="btn" onClick={() => history.push("/placeorder")}>
+            <Button className="btn" onClick={() => history.push("/contactus")}>
               Contact Us <i class="fas fa-long-arrow-alt-right"></i>
             </Button>
           </Card.Body>
@@ -167,7 +167,7 @@ const Home = () => {
           />
           <Button
             className="btn-go"
-            onClick={() => history.push("/placeorder")}
+            onClick={() => history.push("/Radius")}
           >
             Go <i class="fas fa-long-arrow-alt-right"></i>
           </Button>
