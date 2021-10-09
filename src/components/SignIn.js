@@ -1,8 +1,5 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
 import { useHistory } from "react-router-dom";
@@ -14,26 +11,31 @@ import UiImg2 from "../assets/ui-img2.png";
 const SignIn = () => {
   let history = useHistory();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const onChangeEmail = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const onChangePassword = (event) => {
-    setPassword(event.target.value);
-  };
+      setEmail(event.target.value);
+    }
+  
+    const onChangePassword = (event) => {
+      setPassword(event.target.value);
+    }
 
   const handleClick = () => {
-    console.log(email, password);
-    if (email == "" || password == "") {
-      alert("please enter valid email and password");
-    } else {
-      window.localStorage.setItem(email, password);
-      history.push("/profile");
-    }
-  };
+      console.log(email, password);
+      if (email == "" || password == "") {
+        alert('please enter valid email and password')
+      }
+      else {
+         window.localStorage.setItem(email,password);
+         history.push('/home')
+      }
+  }
+
+  const joinWithGoogle = () => {
+    window.open("https://www.google.com", "_blank");
+  }
 
   return (
     <>
@@ -76,8 +78,9 @@ const SignIn = () => {
                             onChange={onChangePassword}
                           />
                           <label htmlFor="floatingInputCustom">Password</label>
+                          <a className = "forgot-pwd" href="/ForgotPassword">Forgot Password?</a>
                         </Form.Floating>
-                        <div class="custom-control custom-checkbox ml-3 mb-3">
+                        <div className="custom-control custom-checkbox ml-3 mb-3">
                           <Form.Group className="mb-3" id="formGridCheckbox">
                             <Form.Check type="checkbox" label="Remember Me" />
                           </Form.Group>
@@ -85,11 +88,23 @@ const SignIn = () => {
                         <Button
                           style={{ width: "100%" }}
                           type="submit"
-                          class=" btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm"
+                          onClick={handleClick}
+                          className=" btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm"
                         >
                           Sign in
                         </Button>
                       </form>
+                      <div className="custom-control custom-checkbox ml-3 mb-3">
+                      <Button
+                          style={{ width: "100%" }}
+                          type="submit"
+                          onClick={joinWithGoogle}
+                          className=" btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm"
+                        >
+                        <i class="fab fa-google payment-methods-footer"></i> Join with Google
+                        </Button>
+                        <Nav.Link href="/SignUp"><i>Dont have an accoutn yet? Sign Up here</i></Nav.Link>
+                        </div> 
                     </div>
                   </div>
                 </div>
