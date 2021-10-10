@@ -9,6 +9,7 @@ import worldMap from "../assets/world-map.png";
 import googleBtn from "../assets/google-btn.png";
 import appleBtn from "../assets/apple-btn.png";
 import cylinder from "../assets/small-cylinder.png";
+import home from "../assets/home-image.svg";
 import { useHistory } from "react-router-dom";
 import Categories from "./Categories";
 
@@ -54,9 +55,9 @@ const Home = () => {
           </Card>
           <Card>
             <Card.Img
-              class="header-img"
+              // class="header-img"
               variant="top"
-              src={cylinder}
+              src={home}
               roundedCircle
             />
           </Card>

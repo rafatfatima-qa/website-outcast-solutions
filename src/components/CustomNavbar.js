@@ -5,7 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import logo from "../assets/Logo1.png";
 
-const CustomNavbar = () => {
+const CustomNavbar = (props) => {
   return (
     <>
       <Navbar collapseOnSelect expand="lg">

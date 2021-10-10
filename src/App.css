@@ -107,6 +107,17 @@ ul {
   cursor: pointer;
 }
 
+#Rectangle_60:hover {
+  fill: #7a1616;
+  cursor: pointer;
+}
+svg:hover {
+  fill: #7a1616;
+  cursor: pointer;
+}
+
+
+
 .payment-methods-footer {
   font-size: 30px;
   cursor: pointer;
@@ -307,3 +318,4 @@ a {
     margin: 42px;
     margin-top: -15px;
 }
+

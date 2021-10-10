@@ -47,7 +47,7 @@ const CategoriesCard = (props) => {
                   fill="#B22234"
                 />
               </svg>{" "}
-              Watch
+              Wishlist
             </button>
           </div>
         </Card.Body>

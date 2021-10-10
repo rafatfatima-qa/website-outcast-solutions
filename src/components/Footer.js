@@ -143,7 +143,7 @@ const Footer = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       width="37.865"
                       height="37.865"
-                      viewBox="0 0 37.865 37.865"
+                      //viewBox="0 0 37.865 37.865"
                     >
                       <rect
                         id="Rectangle_60"
